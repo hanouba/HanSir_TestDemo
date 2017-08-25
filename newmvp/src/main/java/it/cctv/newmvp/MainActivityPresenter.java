@@ -26,6 +26,7 @@ public class MainActivityPresenter extends BasePresenter {
     }
 
     public void log(String username,String password) {
+        Log.d(TAG, "log: username+"+username);
         Call<BaseInfo> call = resAPI.login(username,password,"true");
         call.enqueue(new CallBackAdapter());
     }
@@ -33,7 +34,7 @@ public class MainActivityPresenter extends BasePresenter {
     @Override
     public void paseData(String data) {
         Gson gson = new Gson();
-        Log.d(TAG,data);
+        Log.d(TAG,"paseData"+data);
     }
 
     @Override

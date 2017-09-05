@@ -8,6 +8,7 @@ import android.util.Log;
 import javax.inject.Inject;
 
 import dagger.Component;
+import dagger.internal.DaggerCollections;
 
 /**
  * 创建者 by ${HanSir} on 2017/8/25.

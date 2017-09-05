@@ -1,5 +1,6 @@
 package it.cctv.newmvp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -8,6 +9,7 @@ import android.widget.Toast;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import it.cctv.newmvp.webview.LogWebView;
 
 import static it.cctv.newmvp.R.id.login;
 
@@ -40,6 +42,8 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
             case login:
                 Toast.makeText(this,"登录",Toast.LENGTH_SHORT);
                 presenter.log("admin","111111");
+//                Intent intent = new Intent(this, LogWebView.class);
+//                startActivity(intent);
                 break;
         }
     }

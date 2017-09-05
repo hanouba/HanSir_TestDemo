@@ -9,5 +9,4 @@ package it.cctv.newmvp;
 public interface IView  {
     void  success(Object o);
     void  failed(String msg);
-
 }

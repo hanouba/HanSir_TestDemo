@@ -9,7 +9,7 @@ package it.cctv.newmvp;
 public interface Constant {
     String BASE_URL= "http://192.168.14.199:9090/VideoManagement/a/";
 //登录
-//    String LOGINE="login";
+    String LOGINE="login";
     //计划
     String URL_allPlan = "wc/mobile/plan/allList";
 }

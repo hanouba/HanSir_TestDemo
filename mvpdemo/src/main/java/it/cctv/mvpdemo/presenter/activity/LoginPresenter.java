@@ -1,9 +1,10 @@
-package it.cctv.mvpdemo.presenter;
+package it.cctv.mvpdemo.presenter.activity;
 
 import com.jingewenku.abrahamcaijin.commonutil.AppLogMessageMgr;
 
-import it.cctv.mvpdemo.dao.PlanBean;
-import it.cctv.mvpdemo.module.PlanParView;
+import it.cctv.mvpdemo.dao.LoginBean;
+import it.cctv.mvpdemo.module.activity.LoginView;
+import it.cctv.mvpdemo.presenter.BasePresenter;
 import it.cctv.mvpdemo.retrofit.ApiCallBack;
 
 /**
@@ -12,26 +13,25 @@ import it.cctv.mvpdemo.retrofit.ApiCallBack;
  * 说明
  */
 
-public class PlanParPresenter extends BasePresenter<PlanParView> {
-    public PlanParPresenter(PlanParView view) {
+public class LoginPresenter extends BasePresenter<LoginView> {
+
+    public LoginPresenter(LoginView view) {
         attachView(view);
     }
 
-    public void getPlanParData(String pageNO,String pageSize) {
+    public void login(String name, String password) {
         mvpView.showLoading();
-        addSubscription(apiStores.getPlanPar(pageNO, pageSize), new ApiCallBack<PlanBean>() {
+        addSubscription(apiStores.login(name, password,"true"), new ApiCallBack<LoginBean>() {
             @Override
-            public void onSuccess(PlanBean model) {
-                AppLogMessageMgr.d("流程","PlanParPresenter+onSuccess"+model);
+            public void onSuccess(LoginBean model) {
+                AppLogMessageMgr.d("流程","loginonSuccess"+model);
                 mvpView.getDataSuccess(model);
             }
 
             @Override
             public void onFailure(String msg) {
-                AppLogMessageMgr.d("流程","PlanParPresenter+onFailure"+msg);
                 mvpView.getDataFail(msg);
             }
-
             @Override
             public void onFinish() {
                 mvpView.hideLoading();

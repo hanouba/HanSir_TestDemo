@@ -1,7 +1,8 @@
-package it.cctv.mvpdemo.module;
+package it.cctv.mvpdemo.module.activity;
 
 
 import it.cctv.mvpdemo.dao.LoginBean;
+import it.cctv.mvpdemo.module.BaseView;
 
 /**
  * 创建者 by ${HanSir} on 2017/8/10.

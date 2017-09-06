@@ -14,7 +14,7 @@ public class PlanBean {
      * pageNo : 1
      * pageSize : 30
      * count : 1
-     * list : [{"id":"846baee293da4a1aa07afd7dbe23f1e9","createDate":"2017-08-08 16:24:46","updateDate":"2017-08-08 16:24:46","delFlag":"0","name":"梨园维护组每周现场巡检广丰收费站","beginDate":"2017-08-08","endDate":"2017-12-31","type":"1","period":"2","team":{"id":"b8b38026e7cf4ed885f471a0bd0cc1c7","delFlag":"0","name":"梨园维护组","sort":30,"namePy":"li yuan wei hu zu","shortPy":"li yuan wei hu zu","userCount":"0","parentName":"","parentId":"0"},"status":"0","context":"","road":{"id":"7b1b63f0c3b942bb9750daf2d66a8a11","delFlag":"0","name":"广丰收费站","sort":30,"identification":"","owner":{"id":"e5eb7704840b42038cc1d2e3d0414849","delFlag":"0","name":"广丰收费站","sort":30,"namePy":"guang feng shou fei zhan","shortPy":"guang feng shou fei zhan","userCount":"0","parentName":"","parentId":"0"},"office":{"id":"b8b38026e7cf4ed885f471a0bd0cc1c7","delFlag":"0","name":"梨园维护组","sort":30,"namePy":"li yuan wei hu zu","shortPy":"li yuan wei hu zu","userCount":"0","parentName":"","parentId":"0"},"score":0,"parentId":"0","typeLabel":"未设置","names":"广丰收费站"},"timeline":0,"dataRang":"2017-08-08 至 2017-12-31","executeCount":0,"createByName":"陈杰建","statuCount":"0/120,5/6","finishRate":0,"typeLabel":"现场巡检","beginDateLabel":"2017-08-08","periodLabel":"每周","endDateLabel":"2017-12-31","recordStatus":{"status0":"120","status5":"6"}}]
+     * list : [{"id":"08734dc76fdb49e28d12247df2fc7ace","createDate":"2017-08-30 14:03:51","updateDate":"2017-08-30 14:03:51","delFlag":"0","name":"梨园维护组每天现场巡检广丰收费站","beginDate":"2017-08-30","endDate":"2017-12-31","type":"1","period":"1","team":{"id":"b8b38026e7cf4ed885f471a0bd0cc1c7","delFlag":"0","name":"梨园维护组","sort":30,"namePy":"li yuan wei hu zu","shortPy":"li yuan wei hu zu","userCount":"0","parentName":"","parentId":"0"},"status":"0","context":"","road":{"id":"7b1b63f0c3b942bb9750daf2d66a8a11","delFlag":"0","name":"广丰收费站","sort":30,"identification":"","owner":{"id":"e5eb7704840b42038cc1d2e3d0414849","delFlag":"0","name":"广丰收费站","sort":30,"namePy":"guang feng shou fei zhan","shortPy":"guang feng shou fei zhan","userCount":"0","parentName":"","parentId":"0"},"office":{"id":"b8b38026e7cf4ed885f471a0bd0cc1c7","delFlag":"0","name":"梨园维护组","sort":30,"namePy":"li yuan wei hu zu","shortPy":"li yuan wei hu zu","userCount":"0","parentName":"","parentId":"0"},"score":0,"parentId":"0","typeLabel":"未设置","names":"广丰收费站"},"timeline":0,"dataRang":"2017-08-30 至 2017-12-31","executeCount":0,"createByName":"admin","executId":"3a405e09c9f5495dac8fa63d4d409baf","statuCount":"0/744,0/744,0/744,0/744,0/744,0/744","finishRate":0,"typeLabel":"现场巡检","periodLabel":"每天","endDateLabel":"2017-12-31","recordStatus":{"status0":"744"},"beginDateLabel":"2017-08-30"}]
      * firstResult : 0
      * maxResults : 30
      */
@@ -76,30 +76,31 @@ public class PlanBean {
 
     public static class ListBean {
         /**
-         * id : 846baee293da4a1aa07afd7dbe23f1e9
-         * createDate : 2017-08-08 16:24:46
-         * updateDate : 2017-08-08 16:24:46
+         * id : 08734dc76fdb49e28d12247df2fc7ace
+         * createDate : 2017-08-30 14:03:51
+         * updateDate : 2017-08-30 14:03:51
          * delFlag : 0
-         * name : 梨园维护组每周现场巡检广丰收费站
-         * beginDate : 2017-08-08
+         * name : 梨园维护组每天现场巡检广丰收费站
+         * beginDate : 2017-08-30
          * endDate : 2017-12-31
          * type : 1
-         * period : 2
+         * period : 1
          * team : {"id":"b8b38026e7cf4ed885f471a0bd0cc1c7","delFlag":"0","name":"梨园维护组","sort":30,"namePy":"li yuan wei hu zu","shortPy":"li yuan wei hu zu","userCount":"0","parentName":"","parentId":"0"}
          * status : 0
          * context :
          * road : {"id":"7b1b63f0c3b942bb9750daf2d66a8a11","delFlag":"0","name":"广丰收费站","sort":30,"identification":"","owner":{"id":"e5eb7704840b42038cc1d2e3d0414849","delFlag":"0","name":"广丰收费站","sort":30,"namePy":"guang feng shou fei zhan","shortPy":"guang feng shou fei zhan","userCount":"0","parentName":"","parentId":"0"},"office":{"id":"b8b38026e7cf4ed885f471a0bd0cc1c7","delFlag":"0","name":"梨园维护组","sort":30,"namePy":"li yuan wei hu zu","shortPy":"li yuan wei hu zu","userCount":"0","parentName":"","parentId":"0"},"score":0,"parentId":"0","typeLabel":"未设置","names":"广丰收费站"}
          * timeline : 0
-         * dataRang : 2017-08-08 至 2017-12-31
+         * dataRang : 2017-08-30 至 2017-12-31
          * executeCount : 0
-         * createByName : 陈杰建
-         * statuCount : 0/120,5/6
+         * createByName : admin
+         * executId : 3a405e09c9f5495dac8fa63d4d409baf
+         * statuCount : 0/744,0/744,0/744,0/744,0/744,0/744
          * finishRate : 0
          * typeLabel : 现场巡检
-         * beginDateLabel : 2017-08-08
-         * periodLabel : 每周
+         * periodLabel : 每天
          * endDateLabel : 2017-12-31
-         * recordStatus : {"status0":"120","status5":"6"}
+         * recordStatus : {"status0":"744"}
+         * beginDateLabel : 2017-08-30
          */
 
         private String id;
@@ -119,13 +120,14 @@ public class PlanBean {
         private String dataRang;
         private int executeCount;
         private String createByName;
+        private String executId;
         private String statuCount;
         private int finishRate;
         private String typeLabel;
-        private String beginDateLabel;
         private String periodLabel;
         private String endDateLabel;
         private RecordStatusBean recordStatus;
+        private String beginDateLabel;
 
         public String getId() {
             return id;
@@ -263,6 +265,14 @@ public class PlanBean {
             this.createByName = createByName;
         }
 
+        public String getExecutId() {
+            return executId;
+        }
+
+        public void setExecutId(String executId) {
+            this.executId = executId;
+        }
+
         public String getStatuCount() {
             return statuCount;
         }
@@ -287,14 +297,6 @@ public class PlanBean {
             this.typeLabel = typeLabel;
         }
 
-        public String getBeginDateLabel() {
-            return beginDateLabel;
-        }
-
-        public void setBeginDateLabel(String beginDateLabel) {
-            this.beginDateLabel = beginDateLabel;
-        }
-
         public String getPeriodLabel() {
             return periodLabel;
         }
@@ -317,6 +319,14 @@ public class PlanBean {
 
         public void setRecordStatus(RecordStatusBean recordStatus) {
             this.recordStatus = recordStatus;
+        }
+
+        public String getBeginDateLabel() {
+            return beginDateLabel;
+        }
+
+        public void setBeginDateLabel(String beginDateLabel) {
+            this.beginDateLabel = beginDateLabel;
         }
 
         public static class TeamBean {
@@ -725,12 +735,10 @@ public class PlanBean {
 
         public static class RecordStatusBean {
             /**
-             * status0 : 120
-             * status5 : 6
+             * status0 : 744
              */
 
             private String status0;
-            private String status5;
 
             public String getStatus0() {
                 return status0;
@@ -738,14 +746,6 @@ public class PlanBean {
 
             public void setStatus0(String status0) {
                 this.status0 = status0;
-            }
-
-            public String getStatus5() {
-                return status5;
-            }
-
-            public void setStatus5(String status5) {
-                this.status5 = status5;
             }
         }
     }

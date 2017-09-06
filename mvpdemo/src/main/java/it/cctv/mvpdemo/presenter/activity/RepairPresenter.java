@@ -1,11 +1,12 @@
-package it.cctv.mvpdemo.presenter;
+package it.cctv.mvpdemo.presenter.activity;
 
 import com.jingewenku.abrahamcaijin.commonutil.AppLogMessageMgr;
 
 import it.cctv.mvpdemo.dao.LoginBean;
-import it.cctv.mvpdemo.module.LoginView;
+import it.cctv.mvpdemo.module.activity.LoginView;
+import it.cctv.mvpdemo.module.activity.RepairView;
+import it.cctv.mvpdemo.presenter.BasePresenter;
 import it.cctv.mvpdemo.retrofit.ApiCallBack;
-import it.cctv.mvpdemo.ui.base.BaseActivity;
 
 /**
  * 创建者 by ${HanSir} on 2017/9/5.
@@ -13,9 +14,9 @@ import it.cctv.mvpdemo.ui.base.BaseActivity;
  * 说明
  */
 
-public class LoginPresenter extends BasePresenter<LoginView> {
+public class RepairPresenter extends BasePresenter<RepairView> {
 
-    public LoginPresenter(LoginView view) {
+    public RepairPresenter(RepairView view) {
         attachView(view);
     }
 

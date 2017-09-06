@@ -2,23 +2,21 @@ package it.cctv.mvpdemo.ui.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
 import com.jingewenku.abrahamcaijin.commonutil.AppLogMessageMgr;
+import com.jingewenku.abrahamcaijin.commonutil.AppToastMgr;
 
+import it.cctv.mvpdemo.MainActivity;
 import it.cctv.mvpdemo.R;
 import it.cctv.mvpdemo.dao.LoginBean;
 import it.cctv.mvpdemo.gloable.MyApp;
-import it.cctv.mvpdemo.module.LoginView;
-import it.cctv.mvpdemo.presenter.LoginPresenter;
+import it.cctv.mvpdemo.module.activity.LoginView;
+import it.cctv.mvpdemo.presenter.activity.LoginPresenter;
 import it.cctv.mvpdemo.ui.MvpActivity;
-import it.cctv.mvpdemo.ui.base.BaseActivity;
 import it.cctv.mvpdemo.utils.Common;
-
-import static android.R.attr.mode;
 
 /**
  * 创建者 by ${HanSir} on 2017/9/5.
@@ -54,10 +52,10 @@ public class LoginActivity extends MvpActivity<LoginPresenter> implements LoginV
         String user = model.getName();
         AppLogMessageMgr.d("流程","logactivity+getsuccess"+user);
         if (user != null) {
-            Intent intent = new Intent(this,PlanParActivity.class);
+            Intent intent = new Intent(this,MainActivity.class);
             startActivity(intent);
         }else {
-            mvpPresenter.login(username,password);
+            AppToastMgr.shortToast(this,"sessionid失效");
         }
     }
 
@@ -87,5 +85,15 @@ public class LoginActivity extends MvpActivity<LoginPresenter> implements LoginV
                 mvpPresenter.login(username, password);
             }
         }
+    }
+
+    @Override
+    public void showLoading() {
+        super.showLoading();
+    }
+
+    @Override
+    public void hideLoading() {
+        super.hideLoading();
     }
 }

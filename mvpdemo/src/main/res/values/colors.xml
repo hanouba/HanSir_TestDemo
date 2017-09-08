@@ -3,4 +3,33 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="color_common_Red">#FF482C</color>
+    <color name="color_common_White">#FFFFFF</color>
+    <!--界面背景色-->
+    <color name="color_main_Background">#EEEEEE</color>
+    <!--//首页item文字-->
+    <color name="color_txt_Orange">#FD7C00</color>
+    <color name="color_txt_Green">#11C193</color>
+    <color name="color_txt_Blue">#00ACEB</color>
+    <color name="color_txt_Purple">#9A89B9</color>
+    <!--底部导航栏-->
+    <color name="color_text_Blue">#00A0FF</color>
+    <color name="color_text_gray">#9E9E9E</color>
+    <!--item间隔线-->
+    <color name="color_view_division_Line">#DCDCDC</color>
+
+    <!--各功能界面字体颜色-->
+    <color name="color_function_text_orange">#FF8C00</color>
+    <color name="color_function_text_black">#000000</color>
+    <color name="color_function_text_gray">#919191</color>
+    <color name="color_function_text_orange_plan">#FF482C</color>
+
+    <!--各功能界面背景色-->
+    <color name="color_function_back_blue">#38ADFF</color>
+    <!--弹窗文字背景-->
+    <color name="color_dialog_text_blue">#007AFF</color>
+    <color name="color_dialog_text_black">#535353</color>
+    <color name="color_dialog_text_lightgray">#BFBFBF</color>
+
 </resources>

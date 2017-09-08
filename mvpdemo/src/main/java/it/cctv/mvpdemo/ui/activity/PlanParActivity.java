@@ -81,6 +81,7 @@ public class PlanParActivity extends MvpActivity<PlanParPresenter> implements Pl
                    @Override
                    public void onItemClick(View view, int postion) {
                        AppToastMgr.shortToast(MyApp.context,"点击事件");
+                       //跳转到
                    }
                });
             }

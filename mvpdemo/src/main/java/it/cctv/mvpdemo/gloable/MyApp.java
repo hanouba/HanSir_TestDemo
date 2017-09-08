@@ -23,7 +23,7 @@ public class MyApp extends Application {
     //cookie
     public static CookieJarImpl cookieJar;
     public static OkHttpClient okHttpClient;
-
+    public static boolean isGetPermission = true;  //是否动态获取了权限
     public Context getContext() {
         return context;
     }

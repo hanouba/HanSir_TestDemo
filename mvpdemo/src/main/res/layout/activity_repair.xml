@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/color_main_Background"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@color/color_common_White"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:textSize="16sp"
+            android:text="添加附件:"
+            android:textColor="@color/color_function_text_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/iv_repair_select"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/lens_control_plus_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+    </RelativeLayout>
+    <View
+        android:background="@color/color_view_division_Line"
+        android:layout_width="match_parent"
+        android:layout_height="0.1px"></View>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:background="@color/color_common_White"
+        android:id="@+id/ll_function"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+
+        <ImageView
+            android:id="@+id/iv_take_pic"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/icon_take_image"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <ImageView
+            android:id="@+id/iv_take_video"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/icon_take_video"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <ImageView
+            android:id="@+id/iv_take_voice"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/ic_voice_normal"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+    </LinearLayout>
+
+</LinearLayout>

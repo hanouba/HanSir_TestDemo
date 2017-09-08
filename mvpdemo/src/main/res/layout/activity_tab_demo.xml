@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="it.cctv.mvpdemo.ui.activity.TabDemoActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></android.support.v4.view.ViewPager>
+
+    <com.yinglan.alphatabs.AlphaTabsIndicator
+        android:id="@+id/alphaIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal">
+
+        <com.yinglan.alphatabs.AlphaTabView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            app:badgeBackgroundColor="@color/colorAccent"
+            app:paddingTexwithIcon="5dp"
+            app:tabIconNormal="@mipmap/icon_home_normal"
+            app:tabIconSelected="@mipmap/icon_home_pressed"
+            app:tabText="首页"
+            app:tabTextSize="14sp"
+            app:textColorNormal="@color/gray"
+            app:textColorSelected="@color/home_activity_text_checked" />
+
+        <com.yinglan.alphatabs.AlphaTabView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+
+            app:badgeBackgroundColor="@color/colorAccent"
+            app:paddingTexwithIcon="5dp"
+            app:tabIconNormal="@mipmap/icon_camera_normal"
+            app:tabIconSelected="@mipmap/icon_camera_pressed"
+            app:tabText="视频"
+            app:tabTextSize="14sp"
+            app:textColorNormal="@color/gray"
+            app:textColorSelected="@color/home_activity_text_checked" />
+
+        <com.yinglan.alphatabs.AlphaTabView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            app:badgeBackgroundColor="@color/colorAccent"
+            app:paddingTexwithIcon="5dp"
+            app:tabIconNormal="@mipmap/icon_mine_normal"
+            app:tabIconSelected="@mipmap/icon_mine_pressed"
+            app:tabText="设置"
+            app:tabTextSize="14sp"
+            app:textColorNormal="@color/gray"
+            app:textColorSelected="@color/home_activity_text_checked" />
+        、、、、
+
+    </com.yinglan.alphatabs.AlphaTabsIndicator>
+
+
+</LinearLayout>

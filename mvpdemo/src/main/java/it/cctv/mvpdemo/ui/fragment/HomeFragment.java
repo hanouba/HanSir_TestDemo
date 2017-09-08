@@ -16,6 +16,8 @@ import it.cctv.mvpdemo.presenter.fragment.HomeFragmentPresent;
 import it.cctv.mvpdemo.ui.MvpFragment;
 import it.cctv.mvpdemo.ui.activity.PlanParActivity;
 import it.cctv.mvpdemo.ui.activity.RepairActivity;
+import it.cctv.mvpdemo.ui.activity.TabDemoActivity;
+import it.cctv.mvpdemo.ui.activity.WebActivity;
 
 /**
  * 创建者 by ${HanSir} on 2017/9/6.
@@ -24,7 +26,7 @@ import it.cctv.mvpdemo.ui.activity.RepairActivity;
  */
 
 public class HomeFragment extends MvpFragment<HomeFragmentPresent> implements HomeFragmentView, View.OnClickListener {
-    private Button repair,video,insp;
+    private Button repair,video,insp,newTab;
     private Intent intent;
 
     @Nullable
@@ -35,6 +37,7 @@ public class HomeFragment extends MvpFragment<HomeFragmentPresent> implements Ho
         repair = (Button) inflate.findViewById(R.id.bt_repair);
         video = (Button) inflate.findViewById(R.id.bt_video);
         insp = (Button) inflate.findViewById(R.id.bt_insp);
+        newTab = (Button) inflate.findViewById(R.id.bt_tab);
 
         initListener();
         return inflate;
@@ -44,6 +47,7 @@ public class HomeFragment extends MvpFragment<HomeFragmentPresent> implements Ho
         repair.setOnClickListener(this);
         video.setOnClickListener(this);
         insp.setOnClickListener(this);
+        newTab.setOnClickListener(this);
     }
 
     @Override
@@ -79,9 +83,15 @@ public class HomeFragment extends MvpFragment<HomeFragmentPresent> implements Ho
                 startActivity(intent);
                 break;
             case R.id.bt_video:
+                intent = new Intent(MyApp.context, WebActivity.class);
+                startActivity(intent);
                 break;
             case R.id.bt_insp:
               intent = new Intent(MyApp.context, PlanParActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.bt_tab:
+                intent = new Intent(MyApp.context,TabDemoActivity.class);
                 startActivity(intent);
                 break;
         }

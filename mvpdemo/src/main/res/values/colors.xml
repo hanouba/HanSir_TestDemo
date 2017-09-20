@@ -32,4 +32,11 @@
     <color name="color_dialog_text_black">#535353</color>
     <color name="color_dialog_text_lightgray">#BFBFBF</color>
 
+
+    <!--test-->
+    <color name="color_0bbe06">#FF4081</color>
+    <color name="horvoice_text_color">#ff9c00</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_f3f4f5">#f3f4f5</color>
 </resources>

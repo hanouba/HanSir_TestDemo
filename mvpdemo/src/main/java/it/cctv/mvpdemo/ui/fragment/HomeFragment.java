@@ -18,6 +18,7 @@ import it.cctv.mvpdemo.ui.activity.PlanParActivity;
 import it.cctv.mvpdemo.ui.activity.RepairActivity;
 import it.cctv.mvpdemo.ui.activity.TabDemoActivity;
 import it.cctv.mvpdemo.ui.activity.WebActivity;
+import it.cctv.mvpdemo.ui.test.TestVoiceActivity;
 
 /**
  * 创建者 by ${HanSir} on 2017/9/6.
@@ -26,7 +27,7 @@ import it.cctv.mvpdemo.ui.activity.WebActivity;
  */
 
 public class HomeFragment extends MvpFragment<HomeFragmentPresent> implements HomeFragmentView, View.OnClickListener {
-    private Button repair,video,insp,newTab;
+    private Button repair,video,insp,newTab,takeVoice;
     private Intent intent;
 
     @Nullable
@@ -38,6 +39,7 @@ public class HomeFragment extends MvpFragment<HomeFragmentPresent> implements Ho
         video = (Button) inflate.findViewById(R.id.bt_video);
         insp = (Button) inflate.findViewById(R.id.bt_insp);
         newTab = (Button) inflate.findViewById(R.id.bt_tab);
+        takeVoice = (Button) inflate.findViewById(R.id.bt_voice_test);
 
         initListener();
         return inflate;
@@ -48,6 +50,7 @@ public class HomeFragment extends MvpFragment<HomeFragmentPresent> implements Ho
         video.setOnClickListener(this);
         insp.setOnClickListener(this);
         newTab.setOnClickListener(this);
+        takeVoice.setOnClickListener(this);
     }
 
     @Override
@@ -92,6 +95,10 @@ public class HomeFragment extends MvpFragment<HomeFragmentPresent> implements Ho
                 break;
             case R.id.bt_tab:
                 intent = new Intent(MyApp.context,TabDemoActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.bt_voice_test:
+                intent = new Intent(MyApp.context,TestVoiceActivity.class);
                 startActivity(intent);
                 break;
         }

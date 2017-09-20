@@ -18,6 +18,8 @@ import it.cctv.mvpdemo.presenter.activity.LoginPresenter;
 import it.cctv.mvpdemo.ui.MvpActivity;
 import it.cctv.mvpdemo.utils.Common;
 
+import static android.provider.Telephony.Carriers.PORT;
+
 /**
  * 创建者 by ${HanSir} on 2017/9/5.
  * 版权所有  WELLTRANS.
@@ -36,8 +38,6 @@ public class LoginActivity extends MvpActivity<LoginPresenter> implements LoginV
         setContentView(R.layout.activity_login);
         name = (EditText) findViewById(R.id.et_name);
         paw = (EditText) findViewById(R.id.et_paw);
-        ip = (EditText) findViewById(R.id.et_ip);
-        port = (EditText) findViewById(R.id.et_port);
         bLogin = (Button) findViewById(R.id.bt_login);
 
         initListener();
@@ -76,11 +76,11 @@ public class LoginActivity extends MvpActivity<LoginPresenter> implements LoginV
             case R.id.bt_login: {
                 username = name.getText().toString();
                 password = paw.getText().toString();
-                String IP = ip.getText().toString();
-                String PORT = port.getText().toString();
-                Common.ip = IP;
-                Common.port = PORT;
-                AppLogMessageMgr.d("流程","登录"+IP+ username);
+//                String IP = ip.getText().toString();
+//                String PORT = port.getText().toString();
+//                Common.ip = IP;
+//                Common.port = PORT;
+//                AppLogMessageMgr.d("流程","登录"+IP+ username);
                 MyApp.cookieJar.getCookieStore().removeAll();
                 mvpPresenter.login(username, password);
             }

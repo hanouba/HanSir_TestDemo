@@ -12,7 +12,8 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-
+//        tbs 解决64位手机无法加载问题X5
+        ndk{abiFilters "armeabi"}
     }
     buildTypes {
         release {

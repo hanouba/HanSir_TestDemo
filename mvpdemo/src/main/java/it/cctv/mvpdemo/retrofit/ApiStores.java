@@ -20,7 +20,7 @@ public interface ApiStores {
     String SERVER_HOST_MOVIE = "https://api.douban.com/v2/movie/";
     int SERVER_PORT = 9090;
     String SERVER_ROOT_PATH = "/VideoManagement";
-    String SERVER_BASE_PATH = SERVER_ROOT_PATH + "/a/";
+    String SERVER_BASE_PATH = SERVER_ROOT_PATH + "/a/" ;
     String API_SERVER_URL = "http://" + SERVER_HOST + ":" + SERVER_PORT + SERVER_BASE_PATH;
     //    String API_SERVER_URL = "http://192.168.14.199:9090/VideoManagement/a/";
     String API_SERVER_URL_SESSION = "http://" + SERVER_HOST + ":" + SERVER_PORT + SERVER_BASE_PATH+"login";

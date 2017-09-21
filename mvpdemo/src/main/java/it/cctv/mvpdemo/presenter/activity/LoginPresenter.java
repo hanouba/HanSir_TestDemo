@@ -1,5 +1,6 @@
 package it.cctv.mvpdemo.presenter.activity;
 
+import com.google.gson.Gson;
 import com.jingewenku.abrahamcaijin.commonutil.AppLogMessageMgr;
 
 import it.cctv.mvpdemo.dao.LoginBean;
